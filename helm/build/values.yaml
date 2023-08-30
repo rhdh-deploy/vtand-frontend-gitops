@@ -1,0 +1,15 @@
+app:
+  name: vtand-poi-map-app
+  namespace: vtand
+  cluster: .apps.a1jxqhzp.eastus2.aroapp.io
+
+git:
+  branch: main
+  repo: https://github.com/rhdh-deploy/vtand-frontend
+  org: rhdh-deploy
+  name: vtand-frontend
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: vtand/poi-map-app
+  tag: latest
